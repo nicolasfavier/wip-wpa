@@ -34,15 +34,7 @@ Il suffit d'aller dans chrome : "caster/enregistrer partager" -> pwa
     ? Do you want Bubblewrap to install the Android SDK (recommended)?
     (Enter "No" to use your own Android SDK installation) No
     ? Path to your existing Android SDK: /Users/nicolasfavier/Library/Android/sdk
-- créer un tunel 
-- To generate a public URL in a development environment, install Localtunnel using npm:
-  ```bash
-  npm install -g localtunnel
-  ```
-  Then request a tunnel on the port used by the back end:
-  ```bash
-  lt --port 5173 
-  ```
+
 
 ajouter le host dans la config de vite : [vite.config.js](vite.config.js) -> allowedHosts:
 
