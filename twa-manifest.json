@@ -12,9 +12,9 @@
   "navigationDividerColorDark": "#000000",
   "backgroundColor": "#242424",
   "enableNotifications": true,
-  "startUrl": "https://nicolasfavier.github.io/wip-wpa/",
-  "iconUrl": "https://nicolasfavier.github.io/pwa-512x512.png",
-  "maskableIconUrl": "https://nicolasfavier.github.io/pwa-512x512.png",
+  "startUrl": "/wip-wpa/",
+  "iconUrl": "https://nicolasfavier.github.io/wip-wpa/pwa-192x192.png",
+  "maskableIconUrl": "https://nicolasfavier.github.io/wip-wpa/pwa-192x192.png",
   "splashScreenFadeOutDuration": 300,
   "signingKey": {
     "path": "/Users/nicolasfavier/Workspace/takima/pwa-orth/orth-pwa/android.keystore",

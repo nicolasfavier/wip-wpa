@@ -23,7 +23,7 @@ plugins {
 def twaManifest = [
     applicationId: 'io.github.nicolasfavier.twa',
     hostName: 'nicolasfavier.github.io', // The domain being opened in the TWA.
-    launchUrl: 'https://nicolasfavier.github.io/wip-wpa/', // The start path for the TWA. Must be relative to the domain.
+    launchUrl: '/wip-wpa/', // The start path for the TWA. Must be relative to the domain.
     name: 'Orth PWA - Dictée Orthographe', // The application name.
     launcherName: 'Orth PWA', // The name shown on the Android Launcher.
     themeColor: '#646CFF', // The color used for the status bar.

@@ -35,10 +35,12 @@ Il suffit d'aller dans chrome : "caster/enregistrer partager" -> pwa
     (Enter "No" to use your own Android SDK installation) No
     ? Path to your existing Android SDK: /Users/nicolasfavier/Library/Android/sdk
 
+bubblewrap init --manifest=https://nicolasfavier.github.io/wip-wpa/manifest.webmanifest
 
-ajouter le host dans la config de vite : [vite.config.js](vite.config.js) -> allowedHosts:
+bien changer les icones : https://nicolasfavier.github.io/wip-wpa/pwa-192x192.png
 
-
+Pour envoyer sur le telephone 
+bubblewrap install
   
 
 
