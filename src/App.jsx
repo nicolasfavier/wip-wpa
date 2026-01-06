@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import bonjourAudio from './assets/bonjour_tout_le_monde.mp3'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -54,7 +55,7 @@ function App() {
   }
 
   const playAudio = () => {
-    const audio = new Audio('/bonjour_tout_le_monde.mp3')
+    const audio = new Audio(bonjourAudio)
     audio.play()
   }
 
