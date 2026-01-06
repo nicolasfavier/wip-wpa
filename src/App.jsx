@@ -11,7 +11,7 @@ function App() {
   const [installPrompt, setInstallPrompt] = useState(null)
 
   const phraseCorrecte = "Bonjour tout le monde."
-  const pianoUrl = 'http://localhost:8080/mp3/piano'
+  const pianoUrl = 'https://nicolasfavier.github.io/mp3-provider/piano.wav'
   const pianoCacheKey = 'piano-audio'
 
   useEffect(() => {

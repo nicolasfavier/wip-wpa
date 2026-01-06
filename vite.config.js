@@ -3,6 +3,17 @@ import react from '@vitejs/plugin-react'
 import { VitePWA } from 'vite-plugin-pwa'
 
 export default defineConfig({
+  server: {
+    allowedHosts: ['fruity-masks-accept.loca.lt'],
+    proxy: {
+      '/api': {
+        target: 'http://localhost:8080',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api/, '')
+      }
+    }
+  },
+  base: '/wip-wpa/',
   plugins: [
     react(),
     VitePWA({
@@ -62,6 +73,20 @@ export default defineConfig({
           },
           {
             urlPattern: /^http:\/\/localhost:8080\/mp3\/.*/i,
+            handler: 'CacheFirst',
+            options: {
+              cacheName: 'audio-cache',
+              expiration: {
+                maxEntries: 20,
+                maxAgeSeconds: 60 * 60 * 24 * 30 // 30 jours
+              },
+              cacheableResponse: {
+                statuses: [0, 200]
+              }
+            }
+          },
+          {
+            urlPattern: /\/api\/mp3\/.*/i,
             handler: 'CacheFirst',
             options: {
               cacheName: 'audio-cache',
